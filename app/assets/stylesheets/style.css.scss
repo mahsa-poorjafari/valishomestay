@@ -1,4 +1,4 @@
-@import url("font-awesome.min.css");
+@import url("font-awesome.min.css.scss");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 /*
@@ -247,7 +247,7 @@
 	}
 
 		.image:before {
-			background: url("overlay.png");
+			background: url(image-path("overlay.png"));
 			content: '';
 			height: 100%;
 			left: 0;
@@ -573,7 +573,7 @@
 
 		.wrapper.style2 {
 			background-color: #83d3c9;
-			background-image: url("light-bl.svg"), url("light-br.svg");
+			background-image: url(image-path("light-bl.svg")),url(image-path("light-br.svg"));
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
@@ -792,7 +792,7 @@
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("light-bl.svg"), url("light-br.svg"), url("overlay.png"), url("banner.jpg");
+		background-image: url(image-path("light-bl.svg")), url(image-path("light-br.svg")), url(image-path("overlay.png")), url(image-path("banner.jpg"));
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -860,7 +860,7 @@
 /* Main */
 
 	#main {
-		background-image: url("dark-tl.svg"), url("dark-tr.svg"), url("dark-bl.svg"), url("dark-br.svg");
+		background-image: url(image-path("dark-tl.svg")), url(image-path("dark-tr.svg")), url(image-path("dark-bl.svg")), url(image-path("dark-br.svg"));
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
@@ -892,7 +892,7 @@
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("light-tl.svg"), url("light-tr.svg"), url("overlay.png"), url("banner.jpg");
+		background-image: url(image-path("light-tl.svg")), url(image-path("light-tr.svg")), url(image-path("overlay.png")), url(image-path("banner.jpg"));
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
